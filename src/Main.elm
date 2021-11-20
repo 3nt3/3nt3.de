@@ -22,12 +22,16 @@ sides =
     { top = 0, left = 0, right = 0, bottom = 0 }
 
 
+linkStyle =
+    [ Font.underline, Font.color linkColor ]
+
+
 listItem child =
     paragraph [] [ el [ Font.family [ Font.typeface "Hack", Font.monospace ] ] <| text "-> ", child ]
 
 
 listLink url label =
-    listItem (link [] { url = url, label = el [ Font.underline, Font.color linkColor ] <| text label })
+    listItem (link [] { url = url, label = el linkStyle <| text label })
 
 
 annotatedLink url label description =
@@ -80,6 +84,7 @@ main =
                         , annotatedLink "https://mumble.3nt3.de" "mumble.3nt3.de" (text "web control player for botamusique")
                         , annotatedLink "https://tex.3nt3.de" "tex.3nt3.de" (text "an overleaf instance")
                         ]
+                    , el [ centerX, Font.color <| rgb 0.2 0.2 0.2 ] <| paragraph [] [ text "Made by me with elm. ", link [] { url = "https://git.teich.3nt3.de/3nt3/3nt3.de", label = el [ Font.color <| rgb 0.3 0.3 0.3 ] <| text "source code" } ]
                     ]
                 )
             )

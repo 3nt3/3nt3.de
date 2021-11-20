@@ -56,9 +56,14 @@ main =
                     ]
                     [ paragraph [ Font.size 50 ] [ el [ Font.bold ] <| text "3nt3.de", text " - a duck's personal homepage" ]
                     , el [] <| text "Here I host some services some of which you - as a stranger - can actually use too!"
-                    , column [ paddingEach { sides | left = 20 }, spacing 10 ]
-                        []
                     , el [ paddingEach { sides | top = 20 }, Font.bold, Font.size 40 ] <| text "My accounts"
+                    , column [ paddingEach { sides | left = 20 }, spacing 10 ]
+                        [ listLink "https://twitter.com/3nt3__" "twitter: 3nt3__"
+                        , listLink "https://github.com/3nt3" "github: 3nt3"
+                        , listLink "https://chaos.social/3nt3" "mastodon: @3nt3@chaos.social"
+                        , listItem (text "matrix: @3nt3:3nt3.de")
+                        , listItem (text "mail: gott@3nt3.de (don't spam pls)")
+                        ]
                     , el [ paddingEach { sides | top = 20 }, Font.bold, Font.size 40 ] <| text "My stuff"
                     , column [ paddingEach { sides | left = 20 }, spacing 10 ]
                         [ annotatedLink "https://hausis.3nt3.de" "hausis.3nt3.de" (text "a homework organizer I wrote in 2020/21 with moodle integration")

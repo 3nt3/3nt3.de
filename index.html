@@ -10798,17 +10798,6 @@ var $author$project$Main$main = A2(
 						_List_Nil,
 						$mdgriffith$elm_ui$Element$text('Here I host some services some of which you - as a stranger - can actually use too!')),
 						A2(
-						$mdgriffith$elm_ui$Element$column,
-						_List_fromArray(
-							[
-								$mdgriffith$elm_ui$Element$paddingEach(
-								_Utils_update(
-									$author$project$Main$sides,
-									{left: 20})),
-								$mdgriffith$elm_ui$Element$spacing(10)
-							]),
-						_List_Nil),
-						A2(
 						$mdgriffith$elm_ui$Element$el,
 						_List_fromArray(
 							[
@@ -10820,6 +10809,26 @@ var $author$project$Main$main = A2(
 								$mdgriffith$elm_ui$Element$Font$size(40)
 							]),
 						$mdgriffith$elm_ui$Element$text('My accounts')),
+						A2(
+						$mdgriffith$elm_ui$Element$column,
+						_List_fromArray(
+							[
+								$mdgriffith$elm_ui$Element$paddingEach(
+								_Utils_update(
+									$author$project$Main$sides,
+									{left: 20})),
+								$mdgriffith$elm_ui$Element$spacing(10)
+							]),
+						_List_fromArray(
+							[
+								A2($author$project$Main$listLink, 'https://twitter.com/3nt3__', 'twitter: 3nt3__'),
+								A2($author$project$Main$listLink, 'https://github.com/3nt3', 'github: 3nt3'),
+								A2($author$project$Main$listLink, 'https://chaos.social/3nt3', 'mastodon: @3nt3@chaos.social'),
+								$author$project$Main$listItem(
+								$mdgriffith$elm_ui$Element$text('matrix: @3nt3:3nt3.de')),
+								$author$project$Main$listItem(
+								$mdgriffith$elm_ui$Element$text('mail: gott@3nt3.de (don\'t spam pls)'))
+							])),
 						A2(
 						$mdgriffith$elm_ui$Element$el,
 						_List_fromArray(

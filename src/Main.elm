@@ -38,6 +38,10 @@ annotatedLink url label description =
     paragraph [] [ listLink url label, text " — ", description ]
 
 
+each =
+    { top = 0, right = 0, left = 0, bottom = 0 }
+
+
 main : Html msg
 main =
     layout [] <|
@@ -58,8 +62,9 @@ main =
                     [ Font.family [ Font.typeface "Inter", Font.sansSerif ]
                     , spacing 20
                     ]
-                    [ paragraph [ Font.size 50 ] [ el [ Font.bold ] <| text "3nt3.de", text " - a duck's personal homepage" ]
-                    , el [] <| text "Here I host some services some of which you - as a stranger - can actually use too!"
+                    [ paragraph [ Font.size 50 ] [ el [ Font.bold ] <| text "3nt3.de 🏳️\u{200D}🌈🏳️\u{200D}⚧️", text " — a duck's personal  website" ]
+                    , el [ Font.size 15, spacingXY 0 -10 ] <| text "Nia, 16y/o, she/they"
+                    , el [] <| text "I like to code and hack stuff"
                     , el [ paddingEach { sides | top = 20 }, Font.bold, Font.size 40 ] <| text "My accounts"
                     , column [ paddingEach { sides | left = 20 }, spacing 10 ]
                         [ listLink "https://twitter.com/3nt3__" "twitter: 3nt3__"

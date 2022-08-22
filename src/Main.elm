@@ -66,25 +66,20 @@ main =
                         , listLink "https://github.com/3nt3" "github: 3nt3"
                         , listLink "https://chaos.social/3nt3" "mastodon: @3nt3@chaos.social"
                         , listItem (text "matrix: @3nt3:3nt3.de")
-                        , listItem (text "mail: gott@3nt3.de (don't spam pls)")
+                        , listItem (text "mail: nia@ente.gay (don't spam pls)")
                         ]
                     , el [ paddingEach { sides | top = 20 }, Font.bold, Font.size 40 ] <| text "My stuff"
                     , column [ paddingEach { sides | left = 20 }, spacing 10 ]
-                        [ annotatedLink "https://hausis.3nt3.de" "hausis.3nt3.de" (text "a homework organizer I wrote in 2020/21 with moodle integration")
-                        , annotatedLink "https://schule.3nt3.de" "schule.3nt3.de" (text "all my school documents for copying homework or learning idk")
+                        [ annotatedLink "https://schule.3nt3.de" "schule.3nt3.de" (text "all my school documents for copying homework or learning idk")
+                        , annotatedLink "https://nachhilfe.gymhaan.de" "nachhilfe.gymhaan.de" (text "I wrote most of it but it isn't hosted by me")
                         ]
                     , el [ paddingEach { sides | top = 20 }, Font.bold, Font.size 40 ] <| text "Stuff I self-host"
                     , column [ paddingEach { sides | left = 20 }, spacing 10 ]
-                        [ annotatedLink "https://git.teich.3nt3.de" "git.teich.3nt3.de" (text "a gitea instance")
-                        , annotatedLink "https://le.teich.3nt3.de" "le.teich.3nt3.de" (text "le teich")
-                        , annotatedLink "https://phpmyadmin.teich.3nt3.de" "phpmyadmin.teich.3nt3.de" (text "phpmyadmin (playground for testing stuff)")
-                        , listItem (paragraph [] [ text "teich.3nt3.de — a survival minecraft server (1.17.1 spigot)" ])
-                        , annotatedLink "mumble://3nt3.de:64738" "3nt3.de" (text "a mumble server")
+                        [ annotatedLink "mumble://3nt3.de:64738" "3nt3.de" (text "a mumble server")
                         , listItem (paragraph [] [ text "3nt3.de  —  a matrix homeserver" ])
                         , annotatedLink "https://mumble.3nt3.de" "mumble.3nt3.de" (text "web control player for botamusique")
-                        , annotatedLink "https://tex.3nt3.de" "tex.3nt3.de" (text "an overleaf instance")
                         ]
-                    , el [ centerX, Font.color <| rgb 0.2 0.2 0.2 ] <| paragraph [] [ text "Made by me with elm. ", link [] { url = "https://git.teich.3nt3.de/3nt3/3nt3.de", label = el [ Font.color <| rgb 0.3 0.3 0.3 ] <| text "source code" } ]
+                    , el [ centerX, Font.color <| rgb 0.2 0.2 0.2 ] <| paragraph [] [ text "Made by me with elm. ", link [] { url = "https://github.com/3nt3/3nt3.de", label = el [ Font.color <| rgb 0.3 0.3 0.3 ] <| text "source code" } ]
                     ]
                 )
             )

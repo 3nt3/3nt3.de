@@ -4,7 +4,8 @@ import Element exposing (..)
 import Element.Background as Background
 import Element.Border as Border
 import Element.Font as Font
-import Html exposing (Html)
+import Html exposing (a,Html)
+import Html.Attributes exposing (attribute)
 
 
 white : Color
@@ -85,6 +86,7 @@ main =
                         , annotatedLink "https://mumble.3nt3.de" "mumble.3nt3.de" (text "web control player for botamusique")
                         ]
                     , el [ centerX, Font.color <| rgb 0.2 0.2 0.2 ] <| paragraph [] [ text "Made by me with elm. ", link [] { url = "https://github.com/3nt3/3nt3.de", label = el [ Font.color <| rgb 0.3 0.3 0.3 ] <| text "source code" } ]
+                    , html <| a [(attribute "ref") "me", Html.Attributes.href "https://chaos.social/@3nt3"] [] 
                     ]
                 )
             )

@@ -74,7 +74,7 @@ main =
                         , listItem (text "matrix: @3nt3:3nt3.de")
                         , listItem (text "mail: nia@ente.gay (don't spam pls)")
                         ]
-                    , el [ paddingEach { sides | top = 20 }, Font.bold, Font.size 40 ] <| text "My stuff"
+                    , el [ paddingEach { sides | top = 20 }, Font.bold, Font.size 40 ] <| text "Stuff I created"
                     , column [ paddingEach { sides | left = 20 }, spacing 10 ]
                         [ annotatedLink "https://schule.3nt3.de" "schule.3nt3.de" (text "all my school documents for copying homework or learning idk")
                         , annotatedLink "https://quotes.3nt3.de" "quotes.3nt3.de" (text "(very ugly) hacked together voting platform for quotes from my friend-group's discord server to rank them")

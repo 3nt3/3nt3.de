@@ -77,6 +77,7 @@ main =
                     , el [ paddingEach { sides | top = 20 }, Font.bold, Font.size 40 ] <| text "My stuff"
                     , column [ paddingEach { sides | left = 20 }, spacing 10 ]
                         [ annotatedLink "https://schule.3nt3.de" "schule.3nt3.de" (text "all my school documents for copying homework or learning idk")
+                        , annotatedLink "https://quotes.3nt3.de" "quotes.3nt3.de" (text "(very ugly) hacked together voting platform for quotes from my friend-group's discord server to rank them")
                         , annotatedLink "https://nachhilfe.gymhaan.de" "nachhilfe.gymhaan.de" (text "I wrote most of it but it isn't hosted by me")
                         ]
                     , el [ paddingEach { sides | top = 20 }, Font.bold, Font.size 40 ] <| text "Stuff I self-host"
